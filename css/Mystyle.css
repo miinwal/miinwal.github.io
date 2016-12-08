@@ -7,7 +7,7 @@ html
 /*BODY*/ 
 body 
 {
-    background-image: url("../image/image.jpg");
+    background-image: url("./image/image.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
 	font-family: "Agency FB";
