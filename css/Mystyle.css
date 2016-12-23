@@ -1,42 +1,25 @@
-body,
-html 
+body
 {
-	min-height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: white;
+	font-family;
+	
 }
-/*BODY*/ 
-body 
+*
 {
-    background-image: url("../image/mainpic.JPG");
-	background-repeat: no-repeat;
-	background-size: cover;
-	font-family: "Agency FB";
-	font-size: 20px;
-	color: #f5f5f5;
 	
-	
+	font-family: 'Arial', serif;
+	font-style: normal;
+	font-weight: 100;
 }
-	
-}
-/*Paras*/ 
-p
-{ 
-
-	margin-top: 0; 
-	text-align: justify;
-    font-family: "Agency FB";
-    font-size: 18px;
-	text-align: right;
-	padding-left: 50%;
-	color: #f5f5f5;	
-}
-/*NAVBAR*/
 ul
 {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: none;
+    background-color: #f5f5f5f;
 }
 
 li 
@@ -57,54 +40,25 @@ li
 
 li a {
     display: block;
-    color: white;
+    color: black;
     text-align: right;
-    padding: 14px 16px;
+    padding: 10px 16px;
     text-decoration: none;
 	
 }
-
-.header {
-    background-color: none;
-    color: #f5f5f5f;
-    padding: 15px;
-}
-
-.footer {
-    background-color: none;
-    color: #f5f5f5f;
-    text-align: center;
-    font-size: 12px;
-    padding: 15px;
-}
-
-
-/*onscreentext*/
-
-div.transbox 
+/*
+.picture
 {
-  background-color: none;
-  color:#f5f5f5;
-  position: fixed;
-  top: 500px;
-  right: 720px;
-   
-  
+	position:relative;
+	left: 0;
+	right: 10%;
+	width: 100%;
+	padding: 0%;
+	max-width:1500px;
+	
 }
+*/
 
-div.transbox p {
-  margin: 5%;
-  font-size: 2em;
-  color: #f5f5f5;
-  text-align: center;
-  color:#f5f5f5;
-   
-}
-
-
-/*Button*/
-
-* {font-family: 'Agency FB';-webkit-box-flex: center;-webkit-flex: center;-ms-flex: center;flex: center;}
 
 a.ghost {
     color:#f5f5f5;
@@ -115,12 +69,13 @@ a.ghost {
     padding: 8px;
     margin: 10px;
     font-size: 1em;
+	letter-spacing:2px;
 	float: right;
     text-align: center;
     text-decoration: none;
     -webkit-transition: color 0.3s ease-out, background-color 0.3s ease-out;
     transition: color 0.3s ease-out, background-color 0.3s ease-out;
-	position: fixed;
+	position: absolute;
 	top: 350px;
 	right: 350px;
 }
@@ -141,12 +96,13 @@ a.ghost2 {
     padding: 8px;
     margin: 10px;
     font-size: 1em;
+	letter-spacing:2px;
 	float: right;
     text-align: center;
     text-decoration: none;
     -webkit-transition: color 0.3s ease-out, background-color 0.3s ease-out;
     transition: color 0.3s ease-out, background-color 0.3s ease-out;
-	position: fixed;
+	position: absolute;
 	top: 250px;
 	right: 350px;
 }
@@ -158,47 +114,55 @@ a.ghost2:hover, a.ghost:focus {
     transition: color 0.3s ease-in, background-color 0.3s ease-in;
 }
 
-/* For mobile phones: */
-[class*="col-"] {
-    width: 100%;
+div.icons 
+{
+	text-align: center;
+	display: block;
 }
-@media only screen and (min-width: 768px) {
-    /* For desktop: */
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
+
+.footer {
+	background-color: #0099e6;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 0px;
+	position:absolute;
+	left:0px;
+	width:100%;
+	z-index:+1;
+	letter-spacing:2px;
+
 }
-/*<div class="footer">
-  <p>Resize the browser window to see how the content respond to the resizing.</p>
-</div> REMEMBER TO PUT THE FOOTER LATER*/
+.header
+{
+	overflow:hidden;
+	position:fixed;
+	color: white;
+	background-color: rgba(255,255,255,0.9);
+	width:100%;
+	letter-spacing:2px;
+	
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+div.aboutme 
+{
+	text-align: center;
+	display: block;
+	position: static;
+	top: 100px;
+	right: 550px;
+}
+div.paras 
+{
+	position: relative;
+	top: 150px;
+	right: 0px;
+}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */ 
+    [class="buttons"] {
+	
+        display: none;
+		
+    }
+}
