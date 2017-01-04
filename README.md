@@ -1,1 +1,0 @@
-# miinwal.github.io
