@@ -2,8 +2,7 @@ body
 {
 	margin: 0;
 	padding: 0;
-	background-color: white;
-	font-family;
+	background-color: #F9F9F9;
 	
 }
 *
@@ -19,7 +18,7 @@ ul
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #f5f5f5f;
+    background-color: #f5f5f5;
 }
 
 li 
@@ -37,36 +36,45 @@ li a {
 	
 }
 
+.picture img
+{
+	
+	
+	width:100%;
+	height:auto;
+	
+}
 
 
-a.button1 {
-    	color:#f5f5f5;
-    	border: 1px solid #f5f5f5;
-    	border-radius: 5px;
-   	display: inline-block;
-    	width: 150px;
-    	padding: 8px;
-    	margin: 10px;
-    	font-size: 1em;
+
+a.ghost {
+    color:#f5f5f5;
+    border: 1px solid #f5f5f5;
+    border-radius: 5px;
+    display: inline-block;
+    width: 150px;
+    padding: 8px;
+    margin: 10px;
+    font-size: 1em;
 	letter-spacing:2px;
 	float: right;
-    	text-align: center;
-    	text-decoration: none;
-    	-webkit-transition: color 0.3s ease-out, background-color 0.3s ease-out;
-    	transition: color 0.3s ease-out, background-color 0.3s ease-out;
+    text-align: center;
+    text-decoration: none;
+    -webkit-transition: color 0.3s ease-out, background-color 0.3s ease-out;
+    transition: color 0.3s ease-out, background-color 0.3s ease-out;
 	position: absolute;
 	top: 350px;
 	right: 350px;
 }
 
-a.button1:hover, a.ghost:focus {
-    	background-color:#f5f5f5;
-    	color: #000;
-    	-webkit-transition: color 0.3s ease-in, background-color 0.3s ease-in;
-    	transition: color 0.3s ease-in, background-color 0.3s ease-in;
+a.ghost:hover, a.ghost:focus {
+    background-color:#f5f5f5;
+    color: #000;
+    -webkit-transition: color 0.3s ease-in, background-color 0.3s ease-in;
+    transition: color 0.3s ease-in, background-color 0.3s ease-in;
 }
 
-a.button2 {
+a.ghost2 {
     color:#f5f5f5;
     border: 1px solid #f5f5f5;
     border-radius: 5px;
@@ -86,36 +94,37 @@ a.button2 {
 	right: 350px;
 }
 
-a.button2:hover, a.ghost:focus {
+a.ghost2:hover, a.ghost:focus {
     background-color:#f5f5f5;
     color: #000;
     -webkit-transition: color 0.3s ease-in, background-color 0.3s ease-in;
     transition: color 0.3s ease-in, background-color 0.3s ease-in;
 }
 
-.icons 
+div.icons 
 {
 	text-align: center;
 	display: block;
 	
 }
-h3
-{
-	text-decoration: none;
-}
 
 .footer {
-	background-color: ;
-	color: #f5f5f5;
-    	text-align: center;
-    	font-size: 12px;
-    	padding: 0px;
+	background-color: #0099e6;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    padding: 0px;
 	position:absolute;
 	left:0px;
 	width:100%;
 	z-index:+1;
 	letter-spacing:2px;
 
+}
+.footer img 
+{
+	height: 50px;
+	width: 50px;
 }
 .header
 {
@@ -142,14 +151,14 @@ div.paras
 	top: 150px;
 	right: 0px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) { 
     [class="buttons"] {
 	
         display: none;
 		
     }
-	#header {
-   	width: 100%;
+ #header {
+    width: 100%;
  
 }
 }
